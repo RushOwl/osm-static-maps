@@ -1,4 +1,4 @@
-name: RushOwl ChatWoot Image
+name: RushOwl osm-static-maps Image
 on:
   push:
     branches: [ master ]
