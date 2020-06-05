@@ -21,7 +21,9 @@ RUN \
     /root/.cargo/bin/cargo install oxipng
 
 WORKDIR /app
-RUN npm install
+
+COPY . .
+RUN npm install && npm audit fix
 
 EXPOSE 3000
 CMD [ "npm", "run", "start" ]
