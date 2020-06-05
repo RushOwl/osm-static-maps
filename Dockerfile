@@ -21,7 +21,9 @@ RUN \
     /root/.cargo/bin/cargo install oxipng
 
 WORKDIR /app
+RUN npm install && npm audit fix
+
 EXPOSE 3000
-CMD [ "npm", "run", "installandstartdev" ]
+CMD [ "npm", "run", "start" ]
 
 HEALTHCHECK CMD curl -f http://localhost:3000/health || exit 1
