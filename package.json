@@ -17,7 +17,7 @@
   "dependencies": {
     "commander": "5.1.0",
     "express": "4.17.1",
-    "handlebars": "4.7.6",
+    "handlebars": "4.7.9",
     "imagemin": "7.0.1",
     "imagemin-jpegtran": "6.0.0",
     "imagemin-optipng": "7.1.0",
